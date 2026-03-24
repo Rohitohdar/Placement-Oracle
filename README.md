@@ -1,6 +1,6 @@
 # Placement Oracle
 
-Placement Oracle is a full-stack placement readiness platform for students built with:
+Placement Oracle is a single-repository full-stack placement readiness platform for students built with:
 
 - `client/` -> Next.js + Tailwind CSS frontend
 - `server/` -> Spring Boot + Maven backend
@@ -28,7 +28,7 @@ It includes authentication, profile analysis, GitHub integration, resume parsing
 - BCrypt password hashing
 - Apache Tika for resume parsing
 
-## Final Structure
+## Repository Structure
 
 ```text
 placement-oracle/
@@ -127,7 +127,7 @@ Response:
 
 ## Quick Start
 
-This project has two separate apps:
+This project uses one Git repo with two application folders:
 
 - `server/` = Spring Boot backend -> use `mvn`
 - `client/` = Next.js frontend -> use `npm`
@@ -157,7 +157,7 @@ http://localhost:8080
 ```bash
 cd client
 npm install
-cd client
+npm run dev
 ```
 
 Frontend runs on:
@@ -257,7 +257,7 @@ npm run dev
 - Theme preference is saved in `localStorage`.
 - Protected frontend flows depend on JWT returned from login/signup.
 
-## Final Status
+## Project Status
 
 The project currently supports:
 
